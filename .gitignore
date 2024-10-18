@@ -15,6 +15,7 @@ jspm_packages/
 
 # Optional npm cache directory
 .npm/
+.yarn/install-state.gz
 
 # Optional eslint cache
 .eslintcache

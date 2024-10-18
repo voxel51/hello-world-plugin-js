@@ -1373,16 +1373,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@voxel51/fiftyone-js-plugin-build@npm:^1.0.10":
-  version: 1.0.10
-  resolution: "@voxel51/fiftyone-js-plugin-build@npm:1.0.10"
+"@voxel51/fiftyone-js-plugin-build@npm:^1.0":
+  version: 1.0.11
+  resolution: "@voxel51/fiftyone-js-plugin-build@npm:1.0.11"
   peerDependencies:
     "@rollup/plugin-node-resolve": ^15
     "@types/node": "*"
     "@vitejs/plugin-react": ^4
     vite: ^5
     vite-plugin-externalize-deps: ^0.8
-  checksum: 10c0/cd9d27e82f554cc9c7a9c02ee9c81d42a6d1394b370a622e9009657181920ba388d693492b77aec584f9a3f1cb0cb804c5e78b5bc6bc22cdec3640eb2f17a3e6
+  checksum: 10c0/dc83d288775f3db493ac3a23bdcf398eed32ae64b5e44f483d41de37fd55ac5d456b2177045f9ed995ada4c976b8ac0965bd95ae5fe313dbeda4fc29fea22e9a
   languageName: node
   linkType: hard
 
@@ -1400,7 +1400,7 @@ __metadata:
     "@rollup/plugin-node-resolve": "npm:^15.3.0"
     "@types/node": "npm:^22.7.6"
     "@vitejs/plugin-react": "npm:^4.3.2"
-    "@voxel51/fiftyone-js-plugin-build": "npm:^1.0.10"
+    "@voxel51/fiftyone-js-plugin-build": "npm:^1.0"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
     recoil: "npm:^0.7.7"
