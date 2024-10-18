@@ -1,0 +1,1 @@
+1. Make sure `package.json::main` is defined
