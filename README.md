@@ -11,9 +11,13 @@ This file is a manifest for the plugin. It contains metadata about the plugin, s
 As a Javascript plugin, this file is used to manage the dependencies of the plugin. Some notable entries in this file are:
 
 a. `main`: This is the entry point of the plugin. It is the file that will be loaded when the plugin is initialized. Make sure `@fiftyone/plugins::registerComponent()` is called in this file.
+
 b. `fiftyone::script`: This is a custom field that is used to specify the path to the bundled UMD script that will be loaded in the panel.
+
 c. `dependencies`: If you have any FiftyOne dependencies, you'll want to use a portal to reference them. This is done by adding a `portal` field to the dependency. The `portal` field should point to the path of the dependency in the local FiftyOne repository.
+
 d. `devDependencies`: In addition to dependencies you may introduce, make sure to also declare the peer dependencies of the [fiftyone-js-plugin-build](https://github.com/voxel51/fiftyone-js-plugin-build) package.
+
 e. `resolutions`: Also used to resolve dependency conflicts, this is usually used in this context to resolve portal references.
 
 ## 3. `vite.config.ts`
