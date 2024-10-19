@@ -1,4 +1,4 @@
-This is a template for writing a Javascript panel plugin in FiftyOne.
+This is a template for writing and building a Javascript panel plugin in FiftyOne. Once a plugin is built (as a bundled UMD file), it can be loaded into FiftyOne.
 
 The three most important / notable files are described below.
 
