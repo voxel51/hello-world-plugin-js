@@ -40,8 +40,14 @@ const myPluginThirdPartyDependencies = [
     /my-other-third-party-dependency-.*/
 ];
 
+const myVitePlugins = [
+    // add any additional Vite plugins here
+];
+
 export default defineConfig(dir, {
-  buildConfigOverride: { sourcemap: true, forceBundleDependencies: myPluginThirdPartyDependencies },
+  buildConfigOverride: { sourcemap: true },
+  forceBundleDependencies: myPluginThirdPartyDependencies,
+  plugins: myVitePlugins
 });
 ```
 
