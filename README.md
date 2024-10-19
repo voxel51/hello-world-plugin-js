@@ -14,9 +14,9 @@ a. `main`: This is the entry point of the plugin. It is the file that will be lo
 
 b. `fiftyone::script`: This is a custom field that is used to specify the path to the bundled UMD script that will be loaded in the panel.
 
-c. `dependencies`: If you have any FiftyOne dependencies, you'll want to use a portal to reference them. This is done by adding a `portal` field to the dependency. The `portal` field should point to the path of the dependency in the local FiftyOne repository.
+c. `dependencies`: If you have any FiftyOne dependencies, you'll want to use a portal to reference them. The portal should point to the path of the dependency in the local FiftyOne repository.
 
-d. `devDependencies`: In addition to dependencies you may introduce, make sure to also declare the peer dependencies of the [fiftyone-js-plugin-build](https://github.com/voxel51/fiftyone-js-plugin-build) package.
+d. `devDependencies`: In addition to dependencies you may introduce, add a dev dependency on `@voxel51/fiftyone-js-plugin-build`. Also make sure to also declare the peer dependencies of the [fiftyone-js-plugin-build](https://github.com/voxel51/fiftyone-js-plugin-build) package.
 
 e. `resolutions`: Also used to resolve dependency conflicts, this is usually used in this context to resolve portal references.
 
