@@ -47,5 +47,6 @@
     "@fiftyone/relay": "portal:../fiftyone/app/packages/relay",
     "@fiftyone/operators": "portal:../fiftyone/app/packages/operators",
     "@fiftyone/plugins": "portal:../fiftyone/app/packages/plugins"
-  }
+  },
+  "packageManager": "yarn@4.5.0"
 }
