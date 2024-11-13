@@ -56,3 +56,9 @@ export default defineConfig(dir, {
 Before running `yarn build`, make sure you have a local copy of FiftyOne and `FIFTYONE_DIR` is set to the root of the FiftyOne repository.
 
 See also [Fiftyone JS Plugin Build Utils](https://github.com/voxel51/fiftyone-js-plugin-build).
+
+## Troubleshooting
+
+### `yarn` or `yarn install` fails
+
+1. Make sure you have the right version of `yarn` in your `PATH`. You can check the version by running `yarn --version`. If you have `corepack` installed (available by default in node v16+), you'll be auto prompted to install the right version of `yarn` when you run `yarn` or `yarn install` in the plugin directory.
