@@ -61,4 +61,4 @@ See also [Fiftyone JS Plugin Build Utils](https://github.com/voxel51/fiftyone-js
 
 ### `yarn` or `yarn install` fails
 
-1. Make sure you have the right version of `yarn` in your `PATH`. You can check the version by running `yarn --version`. If you have `corepack` installed (available by default in node v16+), you'll be auto prompoted to install the right version of `yarn` when you run `yarn` or `yarn install` in the plugin directory.
+1. Make sure you have the right version of `yarn` in your `PATH`. You can check the version by running `yarn --version`. If you have `corepack` installed (available by default in node v16+), you'll be auto prompted to install the right version of `yarn` when you run `yarn` or `yarn install` in the plugin directory.
