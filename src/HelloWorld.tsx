@@ -6,8 +6,18 @@ import {
   registerOperator,
 } from "@fiftyone/operators";
 import * as fos from "@fiftyone/state";
-import { useCallback } from "react";
+import { colors, Typography } from "@mui/material";
+import _ from "lodash";
+import { useCallback, useMemo } from "react";
 import { useRecoilValue } from "recoil";
+import styled from "styled-components";
+
+const Container = styled.div`
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.25em;
+`;
 
 export function HelloWorld() {
   const onClickAlert = useCallback(
@@ -16,14 +26,26 @@ export function HelloWorld() {
   );
   const dataset = useRecoilValue(fos.dataset);
 
+  const concatResult = useMemo(() => {
+    const caption = _.concat(["Life gave us lemons,"], "so we concat 🍋").join(
+      " "
+    );
+    return caption;
+  }, []);
+
   return (
-    <>
-      <h1>Hello, world!</h1>
-      <h2>
-        You are viewing the <strong>{dataset?.name}</strong> dataset
-      </h2>
-      <Button onClick={onClickAlert}>Show alert</Button>
-    </>
+    <Container>
+      <Typography variant="h3" color={colors.blueGrey[500]}>
+        Hello, world!
+      </Typography>
+      <Typography color={colors.deepOrange[700]}>
+        You are viewing the <em>{dataset?.name}</em> dataset
+      </Typography>
+      <Typography variant="caption">{concatResult}</Typography>
+      <Button onClick={onClickAlert} style={{ width: "200px" }}>
+        Show alert
+      </Button>
+    </Container>
   );
 }
 

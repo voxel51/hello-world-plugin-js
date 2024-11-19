@@ -25,13 +25,17 @@
     "@fiftyone/relay": "portal:../fiftyone/app/packages/relay",
     "@fiftyone/state": "portal:../fiftyone/app/packages/state",
     "@fiftyone/utilities": "portal:../fiftyone/app/packages/utilities",
+    "@mui/material": "^5",
     "@vitejs/plugin-react": "^4.3.2",
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "recoil": "^0.7.7"
+    "recoil": "^0.7.7",
+    "styled-components": "6.1.13"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^15.3.0",
+    "@types/lodash": "^4.17.13",
     "@types/node": "^22.7.6",
     "@vitejs/plugin-react": "^4.3.2",
     "@voxel51/fiftyone-js-plugin-build": "^1.0.23",
