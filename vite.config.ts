@@ -10,7 +10,7 @@ const dir = __dirname;
  * List any third-party dependencies that should be bundled into the plugin.
  * You can either use regex or package names.
  */
-// const myThirdPartyDependencies = [];
+const myThirdPartyDependencies = ["lodash"];
 
 export default defineConfig(dir, {
   buildConfigOverride: { sourcemap: true },
@@ -19,5 +19,5 @@ export default defineConfig(dir, {
    * We use an opt-in approach to avoid bundling dependencies that are already
    * included in the host application, as this can lead to bloated bundles.
    */
-  // forceBundleDependencies: myThirdPartyDependencies
+  forceBundleDependencies: myThirdPartyDependencies,
 });
