@@ -6,6 +6,7 @@ import {
   registerOperator,
 } from "@fiftyone/operators";
 import * as fos from "@fiftyone/state";
+import { colors, Typography } from "@mui/material";
 import { useCallback } from "react";
 import { useRecoilValue } from "recoil";
 
@@ -17,13 +18,17 @@ export function HelloWorld() {
   const dataset = useRecoilValue(fos.dataset);
 
   return (
-    <>
-      <h1>Hello, world!</h1>
-      <h2>
-        You are viewing the <strong>{dataset?.name}</strong> dataset
-      </h2>
-      <Button onClick={onClickAlert}>Show alert</Button>
-    </>
+    <div style={{ margin: "1em" }}>
+      <Typography variant="h2" color={colors.blueGrey[500]}>
+        Hello, world!
+      </Typography>
+      <Typography color={colors.deepOrange[700]}>
+        You are viewing the <em>{dataset?.name}</em> dataset
+      </Typography>
+      <Button onClick={onClickAlert} style={{ marginTop: "0.5em" }}>
+        Show alert
+      </Button>
+    </div>
   );
 }
 

@@ -25,6 +25,7 @@
     "@fiftyone/relay": "portal:../fiftyone/app/packages/relay",
     "@fiftyone/state": "portal:../fiftyone/app/packages/state",
     "@fiftyone/utilities": "portal:../fiftyone/app/packages/utilities",
+    "@mui/material": "^5",
     "@vitejs/plugin-react": "^4.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
