@@ -8,6 +8,7 @@ import {
 import * as fos from "@fiftyone/state";
 import { colors, Typography } from "@mui/material";
 import _ from "lodash";
+import { motion } from "motion/react";
 import { useCallback, useMemo } from "react";
 import { useRecoilValue } from "recoil";
 import styled from "styled-components";
@@ -42,9 +43,11 @@ export function HelloWorld() {
         You are viewing the <em>{dataset?.name}</em> dataset
       </Typography>
       <Typography variant="caption">{concatResult}</Typography>
-      <Button onClick={onClickAlert} style={{ width: "200px" }}>
-        Show alert
-      </Button>
+      <motion.div animate={{ x: 100 }}>
+        <Button onClick={onClickAlert} style={{ width: "200px" }}>
+          Show alert
+        </Button>
+      </motion.div>
     </Container>
   );
 }
