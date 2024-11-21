@@ -22,7 +22,7 @@ e. `resolutions`: Also used to resolve dependency conflicts, this is usually use
 
 ## 3. `vite.config.ts`
 
-This file is used to configure the Vite build tool. It is used to bundle the plugin into a UMD script that can be loaded in the panel. The `defineConfig` function from the `fiftyone-js-plugin-build` package is used to define the Vite configuration. The `defineConfig` function takes two arguments: the directory of the plugin and an optional configuration object. The configuration object can be used to override the default Vite configuration. For example, you can use it to specify whether or not to generate sourcemaps, or to force bundle third party dependencies. The `defineConfig` function returns a Vite configuration object that can be used to build the plugin. An exmaple of how to use the `defineConfig` function is shown below:
+This file is used to configure the Vite build tool. It is used to bundle the plugin into a UMD script that can be loaded in the panel. The `defineConfig` function from the `fiftyone-js-plugin-build` package is used to define the Vite configuration. The `defineConfig` function takes two arguments: the directory of the plugin and an optional configuration object. The configuration object can be used to override the default Vite configuration. For example, you can use it to specify whether or not to generate sourcemaps. The `defineConfig` function returns a Vite configuration object that can be used to build the plugin. An example of how to use the `defineConfig` function is shown below:
 
 ```js
 import { defineConfig } from "@voxel51/fiftyone-js-plugin-build";
@@ -33,21 +33,13 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const dir = __dirname;
 
-// if you optionally want to bundle in third party dependencies,
-// you can specify them here, either as names or as regexes
-const myPluginThirdPartyDependencies = [
-    "my-third-party-dependency",
-    /my-other-third-party-dependency-.*/
-];
-
 const myAdditionalVitePlugins = [
     // add any additional Vite plugins here
 ];
 
 export default defineConfig(dir, {
   buildConfigOverride: { sourcemap: true },
-  forceBundleDependencies: myPluginThirdPartyDependencies,
-  plugins: myAdditionalVitePlugins
+  plugins: myAdditionalVitePlugins,
 });
 ```
 
